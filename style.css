@@ -185,6 +185,7 @@ button:hover > img {
 }
 #share {
   display: flex;
+  gap: 5px;
   margin: 0 auto;
 }
 #share li:hover img {
