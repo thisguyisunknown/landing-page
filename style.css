@@ -240,6 +240,9 @@ button:hover > img {
   }
 }
 @media (min-width: 769px) {
+  #bg {
+    background-position: center top;
+  }
   h1 {
     font-size: 6.25rem;
   }
