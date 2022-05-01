@@ -118,7 +118,7 @@ button:hover > img {
 #features div > p {
   opacity: 75%;
 }
-#testimonies {
+#content-2 {
   text-align: center;
   font-family: 'J', Sans-Serif;
   color: #fff;
@@ -232,5 +232,15 @@ button:hover > img {
   }
   #testimonials > div {
     flex: 0 1 320px;
+  }
+}
+@media (min-width: 769px) {
+  #features, #testimonials {
+    min-width: 700px;
+  }
+}
+@media (min-width: 1025px) {
+  #features, #testimonials {
+    min-width: 1016px;
   }
 }
