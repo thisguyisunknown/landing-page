@@ -13,7 +13,7 @@ body {
   font-family: 'J', Sans-Serif;
 }
 #bg {
-  background-image: url('assets/img3.jpg');
+  background-image: url('assets/img1.jpg');
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -87,9 +87,9 @@ button:hover > img {
   min-width: 100%;
   text-align: center;
   padding: 2rem 0;
+  color: #fff;
 }
 #container > h2 {
-  color: #fff;
   font-size: 2rem;
   margin-bottom: 2.5rem;
   text-decoration: underline;
@@ -104,14 +104,14 @@ button:hover > img {
 }
 #features > div {
   width: 80%;
-  color: #fff;
-  font-size: 1.19rem;
 }
 #features div > h4 {
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 #features div > p {
   opacity: 75%;
+  font-size: 1.19rem;
 }
 #container-2 {
   text-align: center;
@@ -172,7 +172,68 @@ button:hover > img {
   font-size: 1.19rem;
   font-weight: 500;
   line-height: 1.5;
-  opacity: 75%;
+  opacity: .75;
+}
+#offer {
+  text-align: center;
+  background-color: #192841;
+  margin: 0 0 1.5rem 0;
+}
+#faq {
+  color: #fff;
+}
+#faq > h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #f8e473;
+  text-underline-offset: 10px;
+  font-size: 2rem;
+  margin: 0 0 3rem 0;
+}
+input {
+  display: none;
+}
+input:checked ~ .answer {
+  display: block;
+}
+label, .answer {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+}
+label {
+  display: block;
+  background-color: #192841;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-50%);
+  background-image: url('assets/arrow-down.svg');
+  background-size: contain;
+  transition: transform 0.3s;
+}
+input:checked ~ label::after {
+  transform: translateY(-50%) rotate(-.25turn);
+}
+.answer {
+  font-size: 1.19rem;
+  line-height: 1.6;
+  background-color: rgba(25,40,65,.5);
+  display: none;
+  transition: display .3s;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 5px;
+}
+.answer p {
+  opacity: .75;
 }
 #footer {
   background-color: #192841;
@@ -181,12 +242,11 @@ button:hover > img {
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
-
 }
 #share {
   display: flex;
-  gap: 5px;
   margin: 0 auto;
+  gap: 5px;
 }
 #share li:hover img {
   height: 2.3rem;
@@ -241,9 +301,6 @@ button:hover > img {
   }
 }
 @media (min-width: 769px) {
-  #bg {
-    background-position: center top;
-  }
   h1 {
     font-size: 6.25rem;
   }
@@ -255,6 +312,11 @@ button:hover > img {
   }
   #features, #testimonials {
     min-width: 700px;
+  }
+  label, .answer {
+    margin: 0 auto;
+    width: 320px;
+    padding: 1rem;
   }
 }
 @media (min-width: 1025px) {
