@@ -21,7 +21,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   filter: blur(.125em);
-  opacity: .75;
+  opacity: .70;
   z-index: -1;
   position: fixed;
   top: 0;
